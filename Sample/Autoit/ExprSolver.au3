@@ -24,14 +24,14 @@ Global $__g_hDll_ExprSolver = 0
 ; Modified.......:
 ; ===============================================================================================================================
 Func ExprSolverOpen($lpszDllPath, $bSetToGlobal = True)
-    Local $hDLL
+    Local $hDLL = 0
 
     If FileExists($lpszDllPath) Then
         $hDLL = DllOpen($lpszDllPath)
 
-		If $hDLL And $bSetToGlobal = True Then
-			$__g_hDll_ExprSolver = $hDLL
-		EndIf
+        If $hDLL And $bSetToGlobal = True Then
+            $__g_hDll_ExprSolver = $hDLL
+        EndIf
     EndIf
 
     Return $hDLL
@@ -42,9 +42,9 @@ EndFunc   ;==>ExprSolverOpen
 ; Modified.......:
 ; ===============================================================================================================================
 Func ExprSolverClose($hDLL = 0)
-	If Not $hDLL Then
-		$hDLL = $__g_hDll_ExprSolver
-	EndIf
+    If Not $hDLL Then
+        $hDLL = $__g_hDll_ExprSolver
+    EndIf
 
     If $hDLL Then
         DllClose($hDLL)
@@ -58,9 +58,9 @@ EndFunc   ;==>ExprSolverClose
 Func ExprSolver_Test($lpszExpr, $hDLL = 0)
     Local $aResult = 0
 
-	If Not $hDLL Then
-		$hDLL = $__g_hDll_ExprSolver
-	EndIf
+    If Not $hDLL Then
+        $hDLL = $__g_hDll_ExprSolver
+    EndIf
 
     If $hDLL Then
         Local $aExprSover = DllCall($hDLL, "double", "ExprSolver_Test", "str", $lpszExpr)
@@ -80,9 +80,9 @@ EndFunc   ;==>ExprSolver_Test
 Func ExprSolver_GetLastError($hDLL = 0)
     Local $aResult = $T_ERROR_SUCCESS
 
-	If Not $hDLL Then
-		$hDLL = $__g_hDll_ExprSolver
-	EndIf
+    If Not $hDLL Then
+        $hDLL = $__g_hDll_ExprSolver
+    EndIf
 
     If $hDLL Then
         Local $aExprSover = DllCall($hDLL, "int", "ExprSolver_GetLastError")
