@@ -7,6 +7,12 @@ Simple Expression Solver
 
 Very simple solution for solving mathematical expressions.
 
+<h2><a name="demo" class="anchor" href="#demo"><span class="mini-icon mini-icon-link"></span></a>Demo</h2>
+
+```
+(1*2)*(6^5)+sin(30)+cos(2)*int(4.6)
+```
+
 <h2><a name="function" class="anchor" href="#function"><span class="mini-icon mini-icon-link"></span></a>Function</h2>
 
 ```
