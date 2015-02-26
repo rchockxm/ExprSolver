@@ -1,0 +1,19 @@
+USES "CONSOLE"
+
+#INCLUDE ONCE "ExprSolver.inc"
+
+Function TBMain() As Long
+    
+    Double dResult = ExprSolverTest("(1*2)*(6^5)+sin(30)+cos(2)*int(4.6)")
+    
+    If ExprSolverGetLastError() = %T_ERROR_SUCCESS Then
+        Print "Test: ", dResult
+    Else
+        Print "Error"
+    EndIf
+    
+    Console_WaitKey(10)
+    
+    Function = 1
+
+End Function
