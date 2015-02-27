@@ -61,8 +61,3 @@ Procedure.i ExprSolverGetLastError(hModule.i = 0)
     
     ProcedureReturn iResult
 EndProcedure
-; IDE Options = PureBasic 5.30 (Windows - x86)
-; CursorPosition = 47
-; FirstLine = 33
-; Folding = -
-; EnableXP

@@ -16,9 +16,3 @@ If OpenConsole()
     
     Input()
 EndIf
-
-ExprSolverClose(hDll)
-; IDE Options = PureBasic 5.30 (Windows - x86)
-; CursorPosition = 11
-; EnableUnicode
-; EnableXP

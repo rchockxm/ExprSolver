@@ -8,7 +8,3 @@ Enumeration
     #T_ERROR_FUNC_FACTORIAL = 5 ; Argument to factorial must be positive
     #T_ERROR_BRACKETS       = 6 ; Unbalanced round brackets
 EndEnumeration
-; IDE Options = PureBasic 5.30 (Windows - x86)
-; CursorPosition = 9
-; EnableUnicode
-; EnableXP
