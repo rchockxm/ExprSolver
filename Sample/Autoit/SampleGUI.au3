@@ -19,6 +19,9 @@
 Global Const $dGuiWidth = 400
 Global Const $dGuiHeight = 140
 
+Global Const $lpszGithubUrl = "https://github.com/rchockxm"
+Global Const $lpszSilenceUnlimitedUrl = "http://rchockxm.com/"
+
 Global Const $lpszExprSolverDll = "..\..\ExprSolver.dll"
 Global Const $lpszUseMatchFunc = "ABS,ATN,COS,EXP,FIX,INT,LOG,SIN,SQR,TAN"
 
@@ -59,13 +62,17 @@ Func WinMain()
     Local $hExpression = GUICtrlCreateInput("", 10, 30, $dGuiWidth - 20, 20)
     Local $hResult = GUICtrlCreateInput("", 10, 80, $dGuiWidth - 20, 20)
     Local $hErrorStr = GUICtrlCreateLabel("", 10, $dGuiHeight - 20, 200, 20)
+    Local $hRchockxmLink = GUICtrlCreateLabel("Rchockxm", $dGuiWidth - 110, $dGuiHeight - 20, 50, 20)
+    Local $hGithubLink = GUICtrlCreateLabel("GitHub", $dGuiWidth - 50, $dGuiHeight - 20, 50, 20)
 
     GUICtrlCreateLabel("Expression", 10, 10)
     GUICtrlCreateLabel("Result", 10, 60)
 
     GUISetStyle(BitOR($GUI_SS_DEFAULT_GUI, $WS_SIZEBOX))
     GUISetState(@SW_SHOW, $hGUI)
-
+    
+    Local $iPID
+    
     While 1
         Switch GUIGetMsg()
             Case $GUI_EVENT_CLOSE
@@ -78,6 +85,10 @@ Func WinMain()
 
                 GUICtrlSetData($hResult, $dResult)
                 GUICtrlSetData($hErrorStr, $lpszError)
+            Case $hRchockxmLink:
+                $iPID = ShellExecute($lpszSilenceUnlimitedUrl)
+            Case $hGithubLink:
+                $iPID = ShellExecute($lpszGithubUrl)
         EndSwitch
     WEnd
 
