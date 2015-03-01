@@ -7,6 +7,8 @@ Simple Expression Solver
 
 Very simple solution for solving mathematical expressions.
 
+<img src="http://i.imgur.com/ycBh6Pi.png" />
+
 <h2><a name="demo" class="anchor" href="#demo"><span class="mini-icon mini-icon-link"></span></a>Demo</h2>
 
 ```
