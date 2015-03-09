@@ -34,6 +34,9 @@ TAN
 
 <code>
 ExprSolver_Test
+</code>
+
+<code>
 ExprSolver_GetLastError
 </code>
 
