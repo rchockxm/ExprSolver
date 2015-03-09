@@ -32,9 +32,13 @@ TAN
 
 <h2><a name="dllfunction" class="anchor" href="#dllfunction"><span class="mini-icon mini-icon-link"></span></a>DLL Function</h2>
 
+Expression parser:
+
 <code>
 ExprSolver_Test
 </code>
+
+Get the last error type:
 
 <code>
 ExprSolver_GetLastError
