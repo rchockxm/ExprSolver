@@ -17,7 +17,7 @@ Very simple solution for solving mathematical expressions.
 
 <h2><a name="function" class="anchor" href="#function"><span class="mini-icon mini-icon-link"></span></a>Function</h2>
 
-```
+<code>
 ABS
 ATN
 COS
@@ -28,6 +28,22 @@ LOG
 SIN
 SQR
 TAN
+</code>
+
+<h2><a name="dllfunction" class="anchor" href="#dllfunction"><span class="mini-icon mini-icon-link"></span></a>DLL Function</h2>
+
+<code>
+ExprSolver_Test
+ExprSolver_GetLastError
+</code>
+
+Autoit:
+
+```autoit
+$lpszExpr = "1+2+3/4"
+
+DllCall($hDLL, "double", "ExprSolver_Test", "str", $lpszExpr)
+DllCall($hDLL, "int", "ExprSolver_GetLastError")
 ```
 
 <h2><a name="changelog" class="anchor" href="#changelog"><span class="mini-icon mini-icon-link"></span></a>Changelog</h2>
