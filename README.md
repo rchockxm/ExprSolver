@@ -42,8 +42,17 @@ Autoit:
 ```autoit
 $lpszExpr = "1+2+3/4"
 
-DllCall($hDLL, "double", "ExprSolver_Test", "str", $lpszExpr)
+$result = DllCall($hDLL, "double", "ExprSolver_Test", "str", $lpszExpr)
 DllCall($hDLL, "int", "ExprSolver_GetLastError")
+```
+
+AutoHotkey:
+
+```autohotkey
+lpszExpr = "1+2+3/4"
+
+result = DllCall("ExprSolver\ExprSolver_Test", "AStr", lpszExpr, "Double")
+DllCall("ExprSolver\ExprSolver_GetLastError", "Int")
 ```
 
 <h2><a name="changelog" class="anchor" href="#changelog"><span class="mini-icon mini-icon-link"></span></a>Changelog</h2>
