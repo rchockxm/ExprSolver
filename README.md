@@ -55,6 +55,8 @@ result = DllCall("ExprSolver\ExprSolver_Test", "AStr", lpszExpr, "Double")
 DllCall("ExprSolver\ExprSolver_GetLastError", "Int")
 ```
 
+Sample is available <a href="https://github.com/rchockxm/ExprSolver/tree/master/Sample">here</a>.
+
 <h2><a name="changelog" class="anchor" href="#changelog"><span class="mini-icon mini-icon-link"></span></a>Changelog</h2>
 
 <h4>1.0.0</h4>
