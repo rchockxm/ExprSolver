@@ -35,13 +35,13 @@ TAN
 Expression parser:
 
 <code>
-ExprSolver_Test
+double ExprSolver_Test(char*)
 </code>
 
 Get the last error type:
 
 <code>
-ExprSolver_GetLastError
+int ExprSolver_GetLastError()
 </code>
 
 Autoit:
