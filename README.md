@@ -3,6 +3,8 @@ ExprSolver
 
 Simple Expression Solver
 
+<img src="https://img.shields.io/dub/l/vibe-d.svg" />
+
 <h2><a name="about" class="anchor" href="#about"><span class="mini-icon mini-icon-link"></span></a>About</h2>
 
 Very simple solution for solving mathematical expressions.
