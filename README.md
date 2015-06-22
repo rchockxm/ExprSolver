@@ -66,11 +66,6 @@ DllCall("ExprSolver\ExprSolver_GetLastError", "Int")
 
 Sample is available <a href="https://github.com/rchockxm/ExprSolver/tree/master/Sample">here</a>.
 
-<h2><a name="changelog" class="anchor" href="#changelog"><span class="mini-icon mini-icon-link"></span></a>Changelog</h2>
-
-<h4>1.0.0</h4>
-- Fixed a bug in the blank expression has caused an incorrect calculation problem.
-
 <h2><a name="author" class="anchor" href="#author"><span class="mini-icon mini-icon-link"></span></a>Author</h2>
 * 2015 rchockxm (rchockxm.silver@gmail.com)
 
