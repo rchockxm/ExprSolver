@@ -1,0 +1,20 @@
+#Option Strict
+#AppType Console
+
+#Dllimports "../../ExprSolver.dll"
+#Include "ExprSolver.inc"
+
+'Dim %dResult = ExprSolverTest("(1*2)*(6^5)+sin(30)+cos(2)*int(4.6)")
+
+Dim $lpszExprSolverDll = "../../ExprSolver.dll"
+
+Dim %hDll = ExprSolverOpen(lpszExprSolverDll)
+Dim %dResult = ExprSolverTest("(1*2)*(6^5)+sin(30)+cos(2)*int(4.6)")
+
+If ExprSolverGetLastError() = T_ERROR_SUCCESS Then
+    ? "Test: " & dResult
+Else
+    ? "Error"
+End If
+
+Pause
